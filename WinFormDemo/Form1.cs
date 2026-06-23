@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace WinFormDemo
 {
@@ -29,7 +30,7 @@ namespace WinFormDemo
 
         private void button1_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Add(textBox1.Text + " = "+ passwordGenerator(10, true, true, true, true).ToString());
+            listBox1.Items.Add(textBox1.Text + " = "+ passwordGenerator((int)numericUpDown1.Value, checkBox1.Checked, true, checkBox2.Checked, checkBox3.Checked).ToString());
 
         }
 
@@ -63,6 +64,21 @@ namespace WinFormDemo
                 password.Append(characterSet[index]);
             }
             return password.ToString();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            bool includeUppercase = checkBox1.Checked;
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            bool includeNumbers= checkBox2.Checked;
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            bool includeSpecialCharacters = checkBox3.Checked;
         }
     }
 }
