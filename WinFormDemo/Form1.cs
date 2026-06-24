@@ -25,7 +25,8 @@ namespace WinFormDemo
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            String selectedItem = listBox1.SelectedItem.ToString();
+            Clipboard.SetText(selectedItem);
         }
 
         private void button1_Click(object sender, EventArgs e)
