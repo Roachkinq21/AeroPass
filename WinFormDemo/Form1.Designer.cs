@@ -37,6 +37,8 @@
             this.Passwords = new System.Windows.Forms.Label();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,24 +68,26 @@
             // 
             this.checkBox1.AccessibleName = "Use Special Characters";
             this.checkBox1.AutoSize = true;
+            this.checkBox1.ForeColor = System.Drawing.Color.MintCream;
             this.checkBox1.Location = new System.Drawing.Point(30, 156);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
+            this.checkBox1.Size = new System.Drawing.Size(116, 17);
             this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.Text = "Include Uppercase";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(30, 180);
+            this.checkBox2.ForeColor = System.Drawing.Color.MintCream;
+            this.checkBox2.Location = new System.Drawing.Point(30, 177);
             this.checkBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(80, 17);
+            this.checkBox2.Size = new System.Drawing.Size(106, 17);
             this.checkBox2.TabIndex = 3;
-            this.checkBox2.Text = "checkBox2";
+            this.checkBox2.Text = "Include Numbers";
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
@@ -101,6 +105,7 @@
             this.Passwords.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Passwords.AutoSize = true;
             this.Passwords.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Passwords.ForeColor = System.Drawing.Color.MintCream;
             this.Passwords.Location = new System.Drawing.Point(331, 38);
             this.Passwords.Name = "Passwords";
             this.Passwords.Size = new System.Drawing.Size(83, 24);
@@ -110,12 +115,13 @@
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(30, 201);
+            this.checkBox3.ForeColor = System.Drawing.Color.MintCream;
+            this.checkBox3.Location = new System.Drawing.Point(30, 198);
             this.checkBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(80, 17);
+            this.checkBox3.Size = new System.Drawing.Size(153, 17);
             this.checkBox3.TabIndex = 8;
-            this.checkBox3.Text = "checkBox3";
+            this.checkBox3.Text = "Include Special Characters";
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
@@ -137,12 +143,34 @@
             0,
             0});
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.MintCream;
+            this.label1.Location = new System.Drawing.Point(27, 50);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Password Label";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.MintCream;
+            this.label2.Location = new System.Drawing.Point(30, 97);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Password Length";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(653, 470);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.Passwords);
@@ -172,6 +200,8 @@
         private System.Windows.Forms.Label Passwords;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
